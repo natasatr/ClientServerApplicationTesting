@@ -1,0 +1,47 @@
+{
+  "id": "d0db76c7-14e6-49e1-9547-71a994d8c1e5",
+  "version": "2.0",
+  "name": "Aplikacija-BrisanjeStudenta",
+  "url": "http://localhost:4200",
+  "tests": [{
+    "id": "9b35a02b-54db-4f29-9815-48dab56bd476",
+    "name": "BrisanjeStudentaTest",
+    "commands": [{
+      "id": "ac0cce15-9a03-4fa2-b0dc-2bfbdd958fbe",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cd020a9a-8eb0-4abf-8ecb-045fdc55a0df",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x754",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9a4929a0-1331-4786-84e7-4368a2b9d812",
+      "comment": "",
+      "command": "click",
+      "target": "css=.odd:nth-child(1) .fa",
+      "targets": [
+        ["css=.odd:nth-child(1) .fa", "css:finder"],
+        ["xpath=//table[@id='DataTables_Table_0']/tbody/tr/td[4]/button/i", "xpath:idRelative"],
+        ["xpath=//i", "xpath:position"],
+        ["xpath=//i[contains(.,'Delete')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "6f423792-df45-4ff2-aea4-ca0f8b2a5e14",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9b35a02b-54db-4f29-9815-48dab56bd476"]
+  }],
+  "urls": ["http://localhost:4200/"],
+  "plugins": []
+}

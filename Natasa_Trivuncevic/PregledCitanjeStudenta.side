@@ -1,0 +1,85 @@
+{
+  "id": "70988f29-b6c0-4188-b768-7cd44bbc5d06",
+  "version": "2.0",
+  "name": "PregledCitanjeStudenta",
+  "url": "http://localhost:4200",
+  "tests": [{
+    "id": "3722721d-066a-433c-98a1-f2f5f119e6a0",
+    "name": "PregledCitanjeStudenta",
+    "commands": [{
+      "id": "a4ce54fa-7566-4248-9107-a4c80b09e33b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b261754f-7758-43a1-8fe0-9a15df0da36a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x754",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1910fe62-ac37-4094-8dd6-ec669b3a97d3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=View Student",
+      "targets": [
+        ["linkText=View Student", "linkText"],
+        ["css=.nav-item:nth-child(1) > .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'View Student')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/view-student')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'View Student')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b9bc29d4-6d5f-431f-9c28-6f4522cb1f70",
+      "comment": "",
+      "command": "click",
+      "target": "css=input",
+      "targets": [
+        ["css=input", "css:finder"],
+        ["xpath=//input[@type='search']", "xpath:attributes"],
+        ["xpath=//div[@id='DataTables_Table_0_filter']/label/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a9df0ef-4df5-43e3-acfd-088f8a323928",
+      "comment": "",
+      "command": "type",
+      "target": "css=input",
+      "targets": [
+        ["css=input", "css:finder"],
+        ["xpath=//input[@type='search']", "xpath:attributes"],
+        ["xpath=//div[@id='DataTables_Table_0_filter']/label/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "bojan"
+    }, {
+      "id": "2bba24f5-80e3-4f44-8420-e1f2cbb5fce5",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=input",
+      "targets": [
+        ["css=input", "css:finder"],
+        ["xpath=//input[@type='search']", "xpath:attributes"],
+        ["xpath=//div[@id='DataTables_Table_0_filter']/label/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }]
+  }],
+  "suites": [{
+    "id": "1d03ad5e-268e-4dbe-91fa-c674571fd552",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["3722721d-066a-433c-98a1-f2f5f119e6a0"]
+  }],
+  "urls": ["http://localhost:4200/"],
+  "plugins": []
+}

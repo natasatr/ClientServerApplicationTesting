@@ -1,0 +1,351 @@
+{
+  "id": "4f1722fb-deeb-4d25-aa82-0a709afeaed2",
+  "version": "2.0",
+  "name": "Aplikacija-DodavanjeStudenta",
+  "url": "http://localhost:4200",
+  "tests": [{
+    "id": "8c382b1b-d9da-4b6f-8b3a-3a4f19f3d1f0",
+    "name": "TestDodavanje",
+    "commands": [{
+      "id": "55c3c301-5d12-4b21-9a39-a91e77f745c3",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9856b150-facc-48f9-a5eb-5e24434ab9e3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x754",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a064fdfe-7d01-4ea9-8e22-478c54f98f1f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Add Student",
+      "targets": [
+        ["linkText=Add Student", "linkText"],
+        ["css=.nav-item:nth-child(2) > .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Add Student')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/add-student')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Add Student')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "340da159-b9fc-4c45-bc47-b9c3142ee37b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(1) > .form-control",
+      "targets": [
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "46ffdb4f-343a-4fef-9f7c-870221903811",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=/html/body/app-root/div/app-add-student/div[1]/div[2]/div/form/div[1]/input",
+      "targets": [
+        ["css=.ng-dirty:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "student1"
+    }, {
+      "id": "fae24ab5-d541-4bfe-83ec-8fb05ab07a79",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-invalid:nth-child(2)",
+      "targets": [
+        ["css=.ng-invalid:nth-child(2)", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "23401705-c109-4d66-8945-d00807b9e6c2",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-group:nth-child(2) > .form-control",
+      "targets": [
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "student1@gmail.com"
+    }, {
+      "id": "df070ce8-6700-4109-8417-c8d915a6948c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-untouched",
+      "targets": [
+        ["css=.ng-untouched", "css:finder"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8eb968fc-d4b8-4545-84e5-ac94ca5fd353",
+      "comment": "",
+      "command": "select",
+      "target": "xpath=/html/body/app-root/div/app-add-student/div[1]/div[2]/div/form/div[3]/select",
+      "targets": [],
+      "value": "label=B-Tech"
+    }, {
+      "id": "0f18a95a-7084-4836-8970-6bce16bc98b1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-untouched",
+      "targets": [
+        ["css=.ng-untouched", "css:finder"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a5238680-bc6e-46b9-bac2-16a78697aec2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "36bb3200-9c51-4938-ae75-e628103500e9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(2)",
+      "targets": [
+        ["css=.btn:nth-child(2)", "css:finder"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add More Student')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bfd20538-4d74-40dd-86b0-89c848a53e28",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(1) > .form-control",
+      "targets": [
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "35000e85-afbe-4d27-a6e5-273841d65d5b",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=/html/body/app-root/div/app-add-student/div[1]/div[2]/div/form/div[1]/input",
+      "targets": [
+        ["css=.ng-dirty:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Student2"
+    }, {
+      "id": "02422cb1-e15d-439d-9b94-79c392873db2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-invalid:nth-child(2)",
+      "targets": [
+        ["css=.ng-invalid:nth-child(2)", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "42e9f043-d989-44ba-a852-8c0930b7b891",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-group:nth-child(2) > .form-control",
+      "targets": [
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "student2@gmail.com"
+    }, {
+      "id": "ce0a3a03-a0a7-460c-a6e8-812890cb65de",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-untouched",
+      "targets": [
+        ["css=.ng-untouched", "css:finder"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b6c00126-9c76-48e6-9952-f51df8168a0f",
+      "comment": "",
+      "command": "select",
+      "target": "xpath=/html/body/app-root/div/app-add-student/div[1]/div[2]/div/form/div[3]/select",
+      "targets": [],
+      "value": "label=B-Tech"
+    }, {
+      "id": "44012097-55ee-4f69-b2df-253df8517c8e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-untouched",
+      "targets": [
+        ["css=.ng-untouched", "css:finder"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b74735f5-afe9-47bf-8768-f401ea64ce30",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "14355108-3c22-4deb-bdac-84590faec6a1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(2)",
+      "targets": [
+        ["css=.btn:nth-child(2)", "css:finder"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add More Student')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c8883749-ad7a-44b3-8894-c7223b6b45ab",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(1) > .form-control",
+      "targets": [
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "da6fe24e-9b30-47f2-a213-4e0ae502e0b9",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "css=.form-group:nth-child(2) > .form-control",
+      "targets": [
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "207451c5-92bd-49b9-b6e9-ba2fdfc104ac",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=.form-group:nth-child(2) > label",
+      "targets": [
+        ["css=.form-group:nth-child(2) > label", "css:finder"],
+        ["xpath=//div[2]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Student Email')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "452250b3-4f32-4b58-9143-d363c6c880ea",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(2)",
+      "targets": [
+        ["css=.form-group:nth-child(2)", "css:finder"],
+        ["xpath=//form/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "61894588-5899-4df1-947a-ded81ae40993",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=/html/body/app-root/div/app-add-student/div[1]/div[2]/div/form/div[1]/input",
+      "targets": [
+        ["css=.ng-dirty:nth-child(2)", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "1234"
+    }, {
+      "id": "71a30cfc-1a3e-4d76-9232-e682b5a4943e",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "css=.ng-valid",
+      "targets": [
+        ["css=.ng-valid", "css:finder"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fece4fac-0a96-4907-95eb-75b693870639",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=.form-group:nth-child(3) > label",
+      "targets": [
+        ["css=.form-group:nth-child(3) > label", "css:finder"],
+        ["xpath=//div[3]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Student Branch')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "469174b8-d953-4694-97f9-d6258397140b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(3)",
+      "targets": [
+        ["css=.form-group:nth-child(3)", "css:finder"],
+        ["xpath=//div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "93c6f298-eff4-4a48-9ec3-07bb939a179d",
+      "comment": "",
+      "command": "select",
+      "target": "xpath=/html/body/app-root/div/app-add-student/div[1]/div[2]/div/form/div[3]/select",
+      "targets": [],
+      "value": "label=B-Tech"
+    }, {
+      "id": "5303e3c0-2e08-4176-8077-04ae2fd1c408",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-valid",
+      "targets": [
+        ["css=.ng-valid", "css:finder"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a15a598-080a-4200-b801-ae75186d6e22",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "a366389f-75e1-4b34-b4c6-34c675f89ad4",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["8c382b1b-d9da-4b6f-8b3a-3a4f19f3d1f0"]
+  }],
+  "urls": ["http://localhost:4200/"],
+  "plugins": []
+}
